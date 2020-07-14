@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-
+using Microsoft.Extensions.DependencyInjection;
+using Scheduler.Service.Services;
 
 
 namespace Scheduler.Service
@@ -14,6 +15,8 @@ namespace Scheduler.Service
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .ConfigureServices(service => { service.AddHostedService<SchedulerService>(); })
                 .UseStartup<Startup>();
+
     }
 }

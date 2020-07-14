@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Contracts", "Sche
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler.Service", "Scheduler.Service\Scheduler.Service.csproj", "{6073CCD7-D695-41C3-A348-68752613CAD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.DataBase", "Scheduler.DataBase\Scheduler.DataBase.csproj", "{9A9A187C-C6C8-493D-880A-4A387A5E14F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.ApiClient", "Scheduler.ApiClient\Scheduler.ApiClient.csproj", "{7891D943-D917-408C-8895-6F74C11E7A75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6073CCD7-D695-41C3-A348-68752613CAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6073CCD7-D695-41C3-A348-68752613CAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6073CCD7-D695-41C3-A348-68752613CAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9A187C-C6C8-493D-880A-4A387A5E14F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9A187C-C6C8-493D-880A-4A387A5E14F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9A187C-C6C8-493D-880A-4A387A5E14F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9A187C-C6C8-493D-880A-4A387A5E14F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7891D943-D917-408C-8895-6F74C11E7A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7891D943-D917-408C-8895-6F74C11E7A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7891D943-D917-408C-8895-6F74C11E7A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7891D943-D917-408C-8895-6F74C11E7A75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

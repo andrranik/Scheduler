@@ -1,8 +1,12 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Scheduler.DataBase;
+using Scheduler.Service.Services;
 
 namespace Scheduler.Service
 {
@@ -19,6 +23,9 @@ namespace Scheduler.Service
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddDbContext<SchedulerContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("SchedulerContext")));
+            services.AddSingleton<ISchedulerService, SchedulerService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
